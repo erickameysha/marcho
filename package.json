@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http:erickameysha.github.io/marcho",
   "dependencies": {
     "array-sort": "^1.0.0",
     "call-bind": "^1.0.2",
@@ -13,6 +14,7 @@
     "get-caller-file": "^1.0.3",
     "get-intrinsic": "^1.1.1",
     "get-value": "^2.0.6",
+    "gh-pages": "^3.2.3",
     "graceful-fs": "^4.2.6",
     "has": "^1.0.3",
     "has-symbols": "^1.0.2",
@@ -45,7 +47,9 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC"
